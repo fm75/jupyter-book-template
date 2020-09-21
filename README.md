@@ -7,6 +7,21 @@ Template for jupyter-books using binder
 ## Edit the URL for pages here
 [Docs](https://fm75.github.io/jupyter-book-template/)
 
-## Test actions
-Ideally publish should work on a PR
-Maybe it needed a secret
+## Publishing 
+### Using GitHub actions
+It will publish to gh-pages on a PR/
+
+### Manually using make in binder
+Configure git.
+```bash
+  git config --global user.email "youremail@example.com"
+  git config --global user.name "Your Name"
+```
+After configuring git, you can use `git commit` and `git push` to push changes back to remote.
+
+You can also publish from within binder
+```bash
+make build
+make publish
+```
+
