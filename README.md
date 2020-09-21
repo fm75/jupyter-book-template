@@ -9,3 +9,4 @@ Template for jupyter-books using binder
 
 ## Test actions
 Ideally publish should work on a PR
+Maybe it needed a secret
