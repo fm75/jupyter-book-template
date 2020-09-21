@@ -6,3 +6,6 @@ Template for jupyter-books using binder
 
 ## Edit the URL for pages here
 [Docs](https://fm75.github.io/jupyter-book-template/)
+
+## Test actions
+Ideally publish should work on a PR
