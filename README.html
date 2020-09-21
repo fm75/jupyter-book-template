@@ -184,9 +184,21 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#test-actions">
-   Test actions
+  <a class="reference internal nav-link" href="#publishing">
+   Publishing
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-github-actions">
+     Using GitHub actions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manually-using-make-in-binder">
+     Manually using make in binder
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -209,11 +221,27 @@
 <h2>Edit the URL for pages here<a class="headerlink" href="#edit-the-url-for-pages-here" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://fm75.github.io/jupyter-book-template/">Docs</a></p>
 </div>
-<div class="section" id="test-actions">
-<h2>Test actions<a class="headerlink" href="#test-actions" title="Permalink to this headline">¶</a></h2>
-<p>Ideally publish should work on a PR
-Maybe it needed a secret</p>
+<div class="section" id="publishing">
+<h2>Publishing<a class="headerlink" href="#publishing" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="using-github-actions">
+<h3>Using GitHub actions<a class="headerlink" href="#using-github-actions" title="Permalink to this headline">¶</a></h3>
+<p>It will publish to gh-pages on a PR/</p>
+</div>
+<div class="section" id="manually-using-make-in-binder">
+<h3>Manually using make in binder<a class="headerlink" href="#manually-using-make-in-binder" title="Permalink to this headline">¶</a></h3>
+<p>Configure git.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>  git config --global user.email <span class="s2">&quot;youremail@example.com&quot;</span>
+  git config --global user.name <span class="s2">&quot;Your Name&quot;</span>
+</pre></div>
+</div>
+<p>After configuring git, you can use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> to push changes back to remote.</p>
+<p>You can also publish from within binder</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make build
+make publish
+</pre></div>
+</div>
 <div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 </div>
